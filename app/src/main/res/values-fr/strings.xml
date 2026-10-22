@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_installed">Installées</string>
+    <string name="filter_all">Toutes</string>
+    <string name="list_on">Activés : %1$d/%2$d</string>
+    <string name="nothing_to_open">Rien à ouvrir</string>
+    <string name="info_version">Version %1$s (%2$d)</string>
+    <string name="info_installed">Installée le %1$s</string>
+    <string name="info_permissions">Autorisations</string>
+    <string name="info_no_permissions">Aucune autorisation modifiable</string>
+    <string name="info_special_access">Accès spéciaux</string>
+    <string name="perm_on">Activée</string>
+    <string name="perm_off">Désactivée</string>
+    <string name="perm_partial">Certaines</string>
+    <string name="info_waiting">Sur le téléviseur, dans la boîte « Autoriser le débogage USB ? », cochez « Toujours autoriser » puis choisissez « Autoriser »</string>
+    <string name="info_unreachable">Modifier les autorisations nécessite le débogage ADB, qui est désactivé sur ce téléviseur</string>
+    <string name="info_failed">Le téléviseur ne l’a pas modifié : %1$s</string>
+    <string name="info_stopped">Arrêtée</string>
+    <string name="info_data_cleared">Données effacées</string>
+    <string name="access_all_files">Accès à tous les fichiers</string>
+    <string name="access_overlay">Afficher par-dessus les autres applis</string>
+    <string name="access_write_settings">Modifier les paramètres système</string>
+    <string name="access_install">Installer des applis inconnues</string>
+    <string name="action_open">Ouvrir</string>
+    <string name="action_force_stop">Forcer l’arrêt</string>
+    <string name="action_clear_data">Effacer les données</string>
+    <string name="action_clear_data_confirm">Appuyez à nouveau</string>
+    <string name="action_uninstall">Désinstaller</string>
+    <string name="request_subtitle">Activez ce que demande cette appli</string>
+    <string name="request_all_settings">Tous les paramètres de l’appli</string>
+    <string name="grp_calendar">Agenda</string>
+    <string name="grp_call_log">Journaux d’appels</string>
+    <string name="grp_camera">Appareil photo</string>
+    <string name="grp_contacts">Contacts</string>
+    <string name="grp_location">Position</string>
+    <string name="grp_microphone">Micro</string>
+    <string name="grp_phone">Téléphone</string>
+    <string name="grp_sensors">Capteurs corporels</string>
+    <string name="grp_sms">SMS</string>
+    <string name="grp_storage">Fichiers et médias</string>
+    <string name="grp_activity">Activité physique</string>
+    <string name="grp_nearby">Appareils à proximité</string>
+    <string name="grp_notifications">Notifications</string>
+</resources>

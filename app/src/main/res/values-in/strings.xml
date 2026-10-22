@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_installed">Terpasang</string>
+    <string name="filter_all">Semua</string>
+    <string name="list_on">Aktif: %1$d/%2$d</string>
+    <string name="nothing_to_open">Tidak ada yang bisa dibuka</string>
+    <string name="info_version">Versi %1$s (%2$d)</string>
+    <string name="info_installed">Dipasang %1$s</string>
+    <string name="info_permissions">Izin</string>
+    <string name="info_no_permissions">Tidak ada izin yang dapat diubah</string>
+    <string name="info_special_access">Akses khusus</string>
+    <string name="perm_on">Aktif</string>
+    <string name="perm_off">Nonaktif</string>
+    <string name="perm_partial">Sebagian</string>
+    <string name="info_waiting">Di TV, pada kotak “Izinkan debugging USB?”, centang “Selalu izinkan” lalu pilih “Izinkan”</string>
+    <string name="info_unreachable">Mengubah izin memerlukan debugging ADB, yang nonaktif di TV ini</string>
+    <string name="info_failed">TV tidak mengubahnya: %1$s</string>
+    <string name="info_stopped">Dihentikan</string>
+    <string name="info_data_cleared">Data dihapus</string>
+    <string name="access_all_files">Akses ke semua file</string>
+    <string name="access_overlay">Tampilkan di atas aplikasi lain</string>
+    <string name="access_write_settings">Ubah setelan sistem</string>
+    <string name="access_install">Pasang aplikasi tidak dikenal</string>
+    <string name="action_open">Buka</string>
+    <string name="action_force_stop">Paksa berhenti</string>
+    <string name="action_clear_data">Hapus data</string>
+    <string name="action_clear_data_confirm">Tekan sekali lagi</string>
+    <string name="action_uninstall">Copot pemasangan</string>
+    <string name="request_subtitle">Aktifkan yang diminta aplikasi ini</string>
+    <string name="request_all_settings">Semua setelan aplikasi</string>
+    <string name="grp_calendar">Kalender</string>
+    <string name="grp_call_log">Log panggilan</string>
+    <string name="grp_camera">Kamera</string>
+    <string name="grp_contacts">Kontak</string>
+    <string name="grp_location">Lokasi</string>
+    <string name="grp_microphone">Mikrofon</string>
+    <string name="grp_phone">Telepon</string>
+    <string name="grp_sensors">Sensor tubuh</string>
+    <string name="grp_sms">SMS</string>
+    <string name="grp_storage">File dan media</string>
+    <string name="grp_activity">Aktivitas fisik</string>
+    <string name="grp_nearby">Perangkat di sekitar</string>
+    <string name="grp_notifications">Notifikasi</string>
+</resources>

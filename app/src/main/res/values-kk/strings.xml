@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_installed">Орнатылған</string>
+    <string name="filter_all">Барлығы</string>
+    <string name="list_on">Қосулы: %1$d/%2$d</string>
+    <string name="nothing_to_open">Ашатын ештеңе жоқ</string>
+    <string name="info_version">Нұсқа %1$s (%2$d)</string>
+    <string name="info_installed">Орнатылған күні: %1$s</string>
+    <string name="info_permissions">Рұқсаттар</string>
+    <string name="info_no_permissions">Өзгертуге болатын рұқсаттар жоқ</string>
+    <string name="info_special_access">Арнайы қолжетімділік</string>
+    <string name="perm_on">Қосулы</string>
+    <string name="perm_off">Өшірулі</string>
+    <string name="perm_partial">Жартылай</string>
+    <string name="info_waiting">Теледидардағы «USB арқылы жөндеуге рұқсат беру керек пе?» терезесінде «Әрқашан рұқсат ету» белгісін қойып, «Рұқсат ету» таңдаңыз</string>
+    <string name="info_unreachable">Рұқсаттарды өзгерту үшін ADB жөндеуі қажет, ол бұл теледидарда өшірулі</string>
+    <string name="info_failed">Теледидар өзгертпеді: %1$s</string>
+    <string name="info_stopped">Тоқтатылды</string>
+    <string name="info_data_cleared">Деректер тазаланды</string>
+    <string name="access_all_files">Барлық файлдарға қолжетімділік</string>
+    <string name="access_overlay">Басқа қолданбалардың үстінен көрсету</string>
+    <string name="access_write_settings">Жүйе параметрлерін өзгерту</string>
+    <string name="access_install">Белгісіз қолданбаларды орнату</string>
+    <string name="action_open">Ашу</string>
+    <string name="action_force_stop">Тоқтату</string>
+    <string name="action_clear_data">Деректерді тазалау</string>
+    <string name="action_clear_data_confirm">Қайта басыңыз</string>
+    <string name="action_uninstall">Жою</string>
+    <string name="request_subtitle">Қолданба сұрағанды қосыңыз</string>
+    <string name="request_all_settings">Қолданбаның барлық параметрлері</string>
+    <string name="grp_calendar">Күнтізбе</string>
+    <string name="grp_call_log">Қоңыраулар журналы</string>
+    <string name="grp_camera">Камера</string>
+    <string name="grp_contacts">Контактілер</string>
+    <string name="grp_location">Геолокация</string>
+    <string name="grp_microphone">Микрофон</string>
+    <string name="grp_phone">Телефон</string>
+    <string name="grp_sensors">Дене датчиктері</string>
+    <string name="grp_sms">SMS</string>
+    <string name="grp_storage">Файлдар мен медиа</string>
+    <string name="grp_activity">Дене белсенділігі</string>
+    <string name="grp_nearby">Жақын құрылғылар</string>
+    <string name="grp_notifications">Хабарландырулар</string>
+</resources>

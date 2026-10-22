@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Same drawing as docs/img/icon.png (tools/make-icons.py): a shield with an on and an off switch. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <path android:pathData="M22,0H78A22,22 0 0 1 100,22V78A22,22 0 0 1 78,100H22A22,22 0 0 1 0,78V22A22,22 0 0 1 22,0Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="0"
+                android:startY="0"
+                android:endX="100"
+                android:endY="100">
+                <item android:offset="0" android:color="#FF0F172A" />
+                <item android:offset="1" android:color="#FF4338CA" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M50,12L82,24L82,50C82,70 68,84 50,90C32,84 18,70 18,50L18,24Z" />
+    <path
+        android:fillColor="#FF4338CA"
+        android:pathData="M41,35H59A8,8 0 0 1 59,51H41A8,8 0 0 1 41,35Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:strokeColor="#FF22D3EE"
+        android:strokeWidth="1.6"
+        android:pathData="M64.6,43A5.6,5.6 0 1 1 53.4,43A5.6,5.6 0 1 1 64.6,43Z" />
+    <path
+        android:fillColor="#FFCBD5E1"
+        android:pathData="M41,57H59A8,8 0 0 1 59,73H41A8,8 0 0 1 41,57Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:strokeColor="#FF94A3B8"
+        android:strokeWidth="1.2"
+        android:pathData="M46.6,65A5.6,5.6 0 1 1 35.4,65A5.6,5.6 0 1 1 46.6,65Z" />
+</vector>

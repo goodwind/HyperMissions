@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_installed">インストール済み</string>
+    <string name="filter_all">すべて</string>
+    <string name="list_on">オン %1$d/%2$d</string>
+    <string name="nothing_to_open">開くものがありません</string>
+    <string name="info_version">バージョン %1$s（%2$d）</string>
+    <string name="info_installed">インストール日 %1$s</string>
+    <string name="info_permissions">権限</string>
+    <string name="info_no_permissions">変更できる権限はありません</string>
+    <string name="info_special_access">特別なアクセス</string>
+    <string name="perm_on">オン</string>
+    <string name="perm_off">オフ</string>
+    <string name="perm_partial">一部</string>
+    <string name="info_waiting">テレビの「USB デバッグを許可しますか？」で「常に許可」にチェックを入れ、「許可」を選んでください</string>
+    <string name="info_unreachable">権限の変更には ADB デバッグが必要ですが、このテレビではオフになっています</string>
+    <string name="info_failed">テレビが変更できませんでした：%1$s</string>
+    <string name="info_stopped">停止しました</string>
+    <string name="info_data_cleared">データを消去しました</string>
+    <string name="access_all_files">すべてのファイルへのアクセス</string>
+    <string name="access_overlay">他のアプリの上に重ねて表示</string>
+    <string name="access_write_settings">システム設定の変更</string>
+    <string name="access_install">不明なアプリのインストール</string>
+    <string name="action_open">開く</string>
+    <string name="action_force_stop">強制停止</string>
+    <string name="action_clear_data">データを消去</string>
+    <string name="action_clear_data_confirm">もう一度押してください</string>
+    <string name="action_uninstall">アンインストール</string>
+    <string name="request_subtitle">このアプリが求めている権限をオンにしてください</string>
+    <string name="request_all_settings">アプリの設定をすべて表示</string>
+    <string name="grp_calendar">カレンダー</string>
+    <string name="grp_call_log">通話履歴</string>
+    <string name="grp_camera">カメラ</string>
+    <string name="grp_contacts">連絡先</string>
+    <string name="grp_location">位置情報</string>
+    <string name="grp_microphone">マイク</string>
+    <string name="grp_phone">電話</string>
+    <string name="grp_sensors">ボディセンサー</string>
+    <string name="grp_sms">SMS</string>
+    <string name="grp_storage">ファイルとメディア</string>
+    <string name="grp_activity">身体活動</string>
+    <string name="grp_nearby">付近のデバイス</string>
+    <string name="grp_notifications">通知</string>
+</resources>

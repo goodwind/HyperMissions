@@ -1,0 +1,11 @@
+name: Feature request or translation
+description: An idea, a TV to support, or a better translation
+labels: [enhancement]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like
+      description: For a translation: the language and the strings you would change.
+    validations:
+      required: true

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_installed">已安装</string>
+    <string name="filter_all">全部</string>
+    <string name="list_on">已开 %1$d/%2$d</string>
+    <string name="nothing_to_open">没有可打开的内容</string>
+    <string name="info_version">版本 %1$s（%2$d）</string>
+    <string name="info_installed">安装于 %1$s</string>
+    <string name="info_permissions">权限</string>
+    <string name="info_no_permissions">没有可以修改的权限</string>
+    <string name="info_special_access">特殊权限</string>
+    <string name="perm_on">开</string>
+    <string name="perm_off">关</string>
+    <string name="perm_partial">部分</string>
+    <string name="info_waiting">请在电视上“允许 USB 调试吗？”的提示里勾选“始终允许”并选择“允许”</string>
+    <string name="info_unreachable">修改权限需要 ADB 调试，这台电视上没有打开</string>
+    <string name="info_failed">电视没有修改成功：%1$s</string>
+    <string name="info_stopped">已停止</string>
+    <string name="info_data_cleared">数据已清除</string>
+    <string name="access_all_files">访问所有文件</string>
+    <string name="access_overlay">显示在其他应用上层</string>
+    <string name="access_write_settings">修改系统设置</string>
+    <string name="access_install">安装未知来源应用</string>
+    <string name="action_open">打开</string>
+    <string name="action_force_stop">强行停止</string>
+    <string name="action_clear_data">清除数据</string>
+    <string name="action_clear_data_confirm">再按一次</string>
+    <string name="action_uninstall">卸载</string>
+    <string name="request_subtitle">开启此应用请求的权限</string>
+    <string name="request_all_settings">全部应用设置</string>
+    <string name="grp_calendar">日历</string>
+    <string name="grp_call_log">通话记录</string>
+    <string name="grp_camera">相机</string>
+    <string name="grp_contacts">通讯录</string>
+    <string name="grp_location">位置信息</string>
+    <string name="grp_microphone">麦克风</string>
+    <string name="grp_phone">电话</string>
+    <string name="grp_sensors">身体传感器</string>
+    <string name="grp_sms">短信</string>
+    <string name="grp_storage">文件和媒体</string>
+    <string name="grp_activity">身体活动</string>
+    <string name="grp_nearby">附近设备</string>
+    <string name="grp_notifications">通知</string>
+</resources>

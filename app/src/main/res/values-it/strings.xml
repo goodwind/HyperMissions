@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_installed">Installate</string>
+    <string name="filter_all">Tutte</string>
+    <string name="list_on">Attivi: %1$d/%2$d</string>
+    <string name="nothing_to_open">Niente da aprire</string>
+    <string name="info_version">Versione %1$s (%2$d)</string>
+    <string name="info_installed">Installata il %1$s</string>
+    <string name="info_permissions">Autorizzazioni</string>
+    <string name="info_no_permissions">Nessuna autorizzazione modificabile</string>
+    <string name="info_special_access">Accesso speciale</string>
+    <string name="perm_on">Sì</string>
+    <string name="perm_off">No</string>
+    <string name="perm_partial">Alcune</string>
+    <string name="info_waiting">Sulla TV, nella finestra «Consentire il debug USB?», seleziona «Consenti sempre» e scegli «Consenti»</string>
+    <string name="info_unreachable">Per modificare le autorizzazioni serve il debug ADB, che su questa TV è disattivato</string>
+    <string name="info_failed">La TV non l’ha modificato: %1$s</string>
+    <string name="info_stopped">Arrestata</string>
+    <string name="info_data_cleared">Dati cancellati</string>
+    <string name="access_all_files">Accesso a tutti i file</string>
+    <string name="access_overlay">Mostra sopra altre app</string>
+    <string name="access_write_settings">Modifica impostazioni di sistema</string>
+    <string name="access_install">Installa app sconosciute</string>
+    <string name="action_open">Apri</string>
+    <string name="action_force_stop">Arresta</string>
+    <string name="action_clear_data">Cancella dati</string>
+    <string name="action_clear_data_confirm">Premi ancora</string>
+    <string name="action_uninstall">Disinstalla</string>
+    <string name="request_subtitle">Attiva ciò che chiede questa app</string>
+    <string name="request_all_settings">Tutte le impostazioni dell’app</string>
+    <string name="grp_calendar">Calendario</string>
+    <string name="grp_call_log">Registri chiamate</string>
+    <string name="grp_camera">Fotocamera</string>
+    <string name="grp_contacts">Contatti</string>
+    <string name="grp_location">Posizione</string>
+    <string name="grp_microphone">Microfono</string>
+    <string name="grp_phone">Telefono</string>
+    <string name="grp_sensors">Sensori corporei</string>
+    <string name="grp_sms">SMS</string>
+    <string name="grp_storage">File e contenuti multimediali</string>
+    <string name="grp_activity">Attività fisica</string>
+    <string name="grp_nearby">Dispositivi nelle vicinanze</string>
+    <string name="grp_notifications">Notifiche</string>
+</resources>

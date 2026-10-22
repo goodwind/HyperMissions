@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_installed">Встановлені</string>
+    <string name="filter_all">Усі</string>
+    <string name="list_on">Увімк.: %1$d/%2$d</string>
+    <string name="nothing_to_open">Нічого відкривати</string>
+    <string name="info_version">Версія %1$s (%2$d)</string>
+    <string name="info_installed">Встановлено %1$s</string>
+    <string name="info_permissions">Дозволи</string>
+    <string name="info_no_permissions">Немає дозволів, які можна змінювати</string>
+    <string name="info_special_access">Особливий доступ</string>
+    <string name="perm_on">Увімк.</string>
+    <string name="perm_off">Вимк.</string>
+    <string name="perm_partial">Частково</string>
+    <string name="info_waiting">На телевізорі у вікні «Дозволити налагодження USB?» поставте «Завжди дозволяти» і виберіть «Дозволити»</string>
+    <string name="info_unreachable">Для зміни дозволів потрібне налагодження ADB, воно вимкнене на цьому телевізорі</string>
+    <string name="info_failed">Телевізор не змінив: %1$s</string>
+    <string name="info_stopped">Зупинено</string>
+    <string name="info_data_cleared">Дані очищено</string>
+    <string name="access_all_files">Доступ до всіх файлів</string>
+    <string name="access_overlay">Поверх інших вікон</string>
+    <string name="access_write_settings">Зміна системних налаштувань</string>
+    <string name="access_install">Встановлення невідомих додатків</string>
+    <string name="action_open">Відкрити</string>
+    <string name="action_force_stop">Зупинити</string>
+    <string name="action_clear_data">Очистити дані</string>
+    <string name="action_clear_data_confirm">Натисніть ще раз</string>
+    <string name="action_uninstall">Видалити</string>
+    <string name="request_subtitle">Увімкніть те, що просить додаток</string>
+    <string name="request_all_settings">Усі налаштування додатка</string>
+    <string name="grp_calendar">Календар</string>
+    <string name="grp_call_log">Журнал викликів</string>
+    <string name="grp_camera">Камера</string>
+    <string name="grp_contacts">Контакти</string>
+    <string name="grp_location">Геолокація</string>
+    <string name="grp_microphone">Мікрофон</string>
+    <string name="grp_phone">Телефон</string>
+    <string name="grp_sensors">Датчики тіла</string>
+    <string name="grp_sms">SMS</string>
+    <string name="grp_storage">Файли й медіа</string>
+    <string name="grp_activity">Фізична активність</string>
+    <string name="grp_nearby">Пристрої поблизу</string>
+    <string name="grp_notifications">Сповіщення</string>
+</resources>

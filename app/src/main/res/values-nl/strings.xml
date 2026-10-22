@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_installed">Geïnstalleerd</string>
+    <string name="filter_all">Alle</string>
+    <string name="list_on">Aan: %1$d/%2$d</string>
+    <string name="nothing_to_open">Niets om te openen</string>
+    <string name="info_version">Versie %1$s (%2$d)</string>
+    <string name="info_installed">Geïnstalleerd op %1$s</string>
+    <string name="info_permissions">Rechten</string>
+    <string name="info_no_permissions">Geen rechten om te wijzigen</string>
+    <string name="info_special_access">Speciale toegang</string>
+    <string name="perm_on">Aan</string>
+    <string name="perm_off">Uit</string>
+    <string name="perm_partial">Deels</string>
+    <string name="info_waiting">Kies op de tv in het venster ‘USB-foutopsporing toestaan?’ de optie ‘Altijd toestaan’ en kies ‘Toestaan’</string>
+    <string name="info_unreachable">Voor het wijzigen van rechten is ADB-foutopsporing nodig, die op deze tv is uitgeschakeld</string>
+    <string name="info_failed">De tv heeft het niet gewijzigd: %1$s</string>
+    <string name="info_stopped">Gestopt</string>
+    <string name="info_data_cleared">Gegevens gewist</string>
+    <string name="access_all_files">Toegang tot alle bestanden</string>
+    <string name="access_overlay">Weergeven boven andere apps</string>
+    <string name="access_write_settings">Systeeminstellingen wijzigen</string>
+    <string name="access_install">Onbekende apps installeren</string>
+    <string name="action_open">Openen</string>
+    <string name="action_force_stop">Geforceerd stoppen</string>
+    <string name="action_clear_data">Gegevens wissen</string>
+    <string name="action_clear_data_confirm">Druk nogmaals</string>
+    <string name="action_uninstall">Verwijderen</string>
+    <string name="request_subtitle">Schakel in wat deze app vraagt</string>
+    <string name="request_all_settings">Alle app-instellingen</string>
+    <string name="grp_calendar">Agenda</string>
+    <string name="grp_call_log">Gesprekslogboeken</string>
+    <string name="grp_camera">Camera</string>
+    <string name="grp_contacts">Contacten</string>
+    <string name="grp_location">Locatie</string>
+    <string name="grp_microphone">Microfoon</string>
+    <string name="grp_phone">Telefoon</string>
+    <string name="grp_sensors">Lichaamssensoren</string>
+    <string name="grp_sms">Sms</string>
+    <string name="grp_storage">Bestanden en media</string>
+    <string name="grp_activity">Fysieke activiteit</string>
+    <string name="grp_nearby">Apparaten in de buurt</string>
+    <string name="grp_notifications">Meldingen</string>
+</resources>

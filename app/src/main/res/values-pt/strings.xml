@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_installed">Instalados</string>
+    <string name="filter_all">Todos</string>
+    <string name="list_on">Ativas: %1$d/%2$d</string>
+    <string name="nothing_to_open">Nada para abrir</string>
+    <string name="info_version">Versão %1$s (%2$d)</string>
+    <string name="info_installed">Instalado em %1$s</string>
+    <string name="info_permissions">Permissões</string>
+    <string name="info_no_permissions">Não há permissões que possam ser alteradas</string>
+    <string name="info_special_access">Acesso especial</string>
+    <string name="perm_on">Ativada</string>
+    <string name="perm_off">Desativada</string>
+    <string name="perm_partial">Algumas</string>
+    <string name="info_waiting">Na TV, na caixa «Permitir depuração USB?», marque «Sempre permitir» e escolha «Permitir»</string>
+    <string name="info_unreachable">Alterar permissões exige a depuração ADB, que está desativada nesta TV</string>
+    <string name="info_failed">A TV não alterou: %1$s</string>
+    <string name="info_stopped">Interrompido</string>
+    <string name="info_data_cleared">Dados apagados</string>
+    <string name="access_all_files">Acesso a todos os arquivos</string>
+    <string name="access_overlay">Exibir sobre outros apps</string>
+    <string name="access_write_settings">Alterar as configurações do sistema</string>
+    <string name="access_install">Instalar apps desconhecidos</string>
+    <string name="action_open">Abrir</string>
+    <string name="action_force_stop">Forçar parada</string>
+    <string name="action_clear_data">Limpar dados</string>
+    <string name="action_clear_data_confirm">Pressione de novo</string>
+    <string name="action_uninstall">Desinstalar</string>
+    <string name="request_subtitle">Ative o que este app pede</string>
+    <string name="request_all_settings">Todas as configurações do app</string>
+    <string name="grp_calendar">Agenda</string>
+    <string name="grp_call_log">Registros de chamadas</string>
+    <string name="grp_camera">Câmera</string>
+    <string name="grp_contacts">Contatos</string>
+    <string name="grp_location">Localização</string>
+    <string name="grp_microphone">Microfone</string>
+    <string name="grp_phone">Telefone</string>
+    <string name="grp_sensors">Sensores corporais</string>
+    <string name="grp_sms">SMS</string>
+    <string name="grp_storage">Arquivos e mídia</string>
+    <string name="grp_activity">Atividade física</string>
+    <string name="grp_nearby">Dispositivos próximos</string>
+    <string name="grp_notifications">Notificações</string>
+</resources>

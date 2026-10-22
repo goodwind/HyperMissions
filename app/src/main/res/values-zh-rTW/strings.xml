@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_installed">已安裝</string>
+    <string name="filter_all">全部</string>
+    <string name="list_on">已開 %1$d/%2$d</string>
+    <string name="nothing_to_open">沒有可開啟的內容</string>
+    <string name="info_version">版本 %1$s（%2$d）</string>
+    <string name="info_installed">安裝於 %1$s</string>
+    <string name="info_permissions">權限</string>
+    <string name="info_no_permissions">沒有可以修改的權限</string>
+    <string name="info_special_access">特殊權限</string>
+    <string name="perm_on">開</string>
+    <string name="perm_off">關</string>
+    <string name="perm_partial">部分</string>
+    <string name="info_waiting">請在電視上「允許 USB 偵錯嗎？」的提示中勾選「一律允許」並選擇「允許」</string>
+    <string name="info_unreachable">修改權限需要 ADB 偵錯，這台電視上沒有開啟</string>
+    <string name="info_failed">電視沒有修改成功：%1$s</string>
+    <string name="info_stopped">已停止</string>
+    <string name="info_data_cleared">資料已清除</string>
+    <string name="access_all_files">存取所有檔案</string>
+    <string name="access_overlay">顯示在其他應用程式上層</string>
+    <string name="access_write_settings">修改系統設定</string>
+    <string name="access_install">安裝未知來源應用程式</string>
+    <string name="action_open">開啟</string>
+    <string name="action_force_stop">強制停止</string>
+    <string name="action_clear_data">清除資料</string>
+    <string name="action_clear_data_confirm">再按一次</string>
+    <string name="action_uninstall">解除安裝</string>
+    <string name="request_subtitle">開啟此應用程式要求的權限</string>
+    <string name="request_all_settings">全部應用程式設定</string>
+    <string name="grp_calendar">日曆</string>
+    <string name="grp_call_log">通話記錄</string>
+    <string name="grp_camera">相機</string>
+    <string name="grp_contacts">聯絡人</string>
+    <string name="grp_location">位置資訊</string>
+    <string name="grp_microphone">麥克風</string>
+    <string name="grp_phone">電話</string>
+    <string name="grp_sensors">身體感應器</string>
+    <string name="grp_sms">簡訊</string>
+    <string name="grp_storage">檔案和媒體</string>
+    <string name="grp_activity">身體活動</string>
+    <string name="grp_nearby">附近裝置</string>
+    <string name="grp_notifications">通知</string>
+</resources>

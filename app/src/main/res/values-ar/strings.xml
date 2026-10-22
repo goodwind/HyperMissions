@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_installed">المثبّتة</string>
+    <string name="filter_all">الكل</string>
+    <string name="list_on">مفعّل %1$d/%2$d</string>
+    <string name="nothing_to_open">لا يوجد ما يمكن فتحه</string>
+    <string name="info_version">الإصدار %1$s (%2$d)</string>
+    <string name="info_installed">تم التثبيت في %1$s</string>
+    <string name="info_permissions">الأذونات</string>
+    <string name="info_no_permissions">لا توجد أذونات يمكن تغييرها</string>
+    <string name="info_special_access">وصول خاص</string>
+    <string name="perm_on">مفعّل</string>
+    <string name="perm_off">متوقف</string>
+    <string name="perm_partial">بعضها</string>
+    <string name="info_waiting">على التلفزيون، في نافذة «هل تريد السماح بتصحيح أخطاء USB؟» حدّد «السماح دائمًا» ثم اختر «السماح»</string>
+    <string name="info_unreachable">يتطلب تغيير الأذونات تفعيل تصحيح أخطاء ADB، وهو متوقف على هذا التلفزيون</string>
+    <string name="info_failed">لم يغيّر التلفزيون ذلك: %1$s</string>
+    <string name="info_stopped">تم الإيقاف</string>
+    <string name="info_data_cleared">تم مسح البيانات</string>
+    <string name="access_all_files">الوصول إلى جميع الملفات</string>
+    <string name="access_overlay">العرض فوق التطبيقات الأخرى</string>
+    <string name="access_write_settings">تغيير إعدادات النظام</string>
+    <string name="access_install">تثبيت التطبيقات غير المعروفة</string>
+    <string name="action_open">فتح</string>
+    <string name="action_force_stop">إيقاف إجباري</string>
+    <string name="action_clear_data">مسح البيانات</string>
+    <string name="action_clear_data_confirm">اضغط مرة أخرى</string>
+    <string name="action_uninstall">إلغاء التثبيت</string>
+    <string name="request_subtitle">فعّل ما يطلبه هذا التطبيق</string>
+    <string name="request_all_settings">جميع إعدادات التطبيق</string>
+    <string name="grp_calendar">التقويم</string>
+    <string name="grp_call_log">سجلات المكالمات</string>
+    <string name="grp_camera">الكاميرا</string>
+    <string name="grp_contacts">جهات الاتصال</string>
+    <string name="grp_location">الموقع</string>
+    <string name="grp_microphone">الميكروفون</string>
+    <string name="grp_phone">الهاتف</string>
+    <string name="grp_sensors">أجهزة استشعار الجسم</string>
+    <string name="grp_sms">الرسائل القصيرة</string>
+    <string name="grp_storage">الملفات والوسائط</string>
+    <string name="grp_activity">النشاط البدني</string>
+    <string name="grp_nearby">الأجهزة القريبة</string>
+    <string name="grp_notifications">الإشعارات</string>
+</resources>

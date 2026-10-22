@@ -1,0 +1,18 @@
+HyperMissions
+Copyright 2026 Alexandr Serdtsev
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+It includes the following third-party material:
+
+- Material Symbols (Rounded, filled, weight 400), Copyright Google LLC, Apache License 2.0.
+  https://github.com/google/material-design-icons
+  The path data in app/src/main/java/io/github/goodwind/hypermissions/GlyphPaths.kt.
+
+- Noto Sans Bold and Regular, used only to draw the wordmark of the banner image
+  (docs/img/banner.png, app/src/main/res/drawable-xhdpi/banner.png) with tools/make-icons.py.
+  Copyright Google LLC and the Noto Project Authors, SIL Open Font License 1.1.
+  https://github.com/notofonts
+
+At run time the app uses Jetpack Compose, AndroidX Activity and Core (Apache License 2.0),
+which are not part of this repository and are pulled in by Gradle.

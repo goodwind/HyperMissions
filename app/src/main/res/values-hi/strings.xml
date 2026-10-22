@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_installed">इंस्टॉल किए गए</string>
+    <string name="filter_all">सभी</string>
+    <string name="list_on">चालू %1$d/%2$d</string>
+    <string name="nothing_to_open">खोलने के लिए कुछ नहीं</string>
+    <string name="info_version">संस्करण %1$s (%2$d)</string>
+    <string name="info_installed">%1$s को इंस्टॉल किया गया</string>
+    <string name="info_permissions">अनुमतियाँ</string>
+    <string name="info_no_permissions">बदलने योग्य कोई अनुमति नहीं</string>
+    <string name="info_special_access">विशेष एक्सेस</string>
+    <string name="perm_on">चालू</string>
+    <string name="perm_off">बंद</string>
+    <string name="perm_partial">कुछ</string>
+    <string name="info_waiting">टीवी पर “USB डिबगिंग की अनुमति दें?” बॉक्स में “हमेशा अनुमति दें” चुनें और “अनुमति दें” दबाएँ</string>
+    <string name="info_unreachable">अनुमतियाँ बदलने के लिए ADB डिबगिंग ज़रूरी है, जो इस टीवी पर बंद है</string>
+    <string name="info_failed">टीवी ने इसे नहीं बदला: %1$s</string>
+    <string name="info_stopped">रोका गया</string>
+    <string name="info_data_cleared">डेटा साफ़ किया गया</string>
+    <string name="access_all_files">सभी फ़ाइलों का एक्सेस</string>
+    <string name="access_overlay">अन्य ऐप्स के ऊपर दिखाएँ</string>
+    <string name="access_write_settings">सिस्टम सेटिंग बदलें</string>
+    <string name="access_install">अज्ञात ऐप्स इंस्टॉल करें</string>
+    <string name="action_open">खोलें</string>
+    <string name="action_force_stop">ज़बरदस्ती रोकें</string>
+    <string name="action_clear_data">डेटा साफ़ करें</string>
+    <string name="action_clear_data_confirm">फिर से दबाएँ</string>
+    <string name="action_uninstall">अनइंस्टॉल करें</string>
+    <string name="request_subtitle">वह चालू करें जो यह ऐप माँग रहा है</string>
+    <string name="request_all_settings">ऐप की सभी सेटिंग</string>
+    <string name="grp_calendar">कैलेंडर</string>
+    <string name="grp_call_log">कॉल लॉग</string>
+    <string name="grp_camera">कैमरा</string>
+    <string name="grp_contacts">संपर्क</string>
+    <string name="grp_location">स्थान</string>
+    <string name="grp_microphone">माइक्रोफ़ोन</string>
+    <string name="grp_phone">फ़ोन</string>
+    <string name="grp_sensors">बॉडी सेंसर</string>
+    <string name="grp_sms">SMS</string>
+    <string name="grp_storage">फ़ाइलें और मीडिया</string>
+    <string name="grp_activity">शारीरिक गतिविधि</string>
+    <string name="grp_nearby">आस-पास के डिवाइस</string>
+    <string name="grp_notifications">सूचनाएँ</string>
+</resources>

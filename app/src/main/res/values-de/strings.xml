@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_installed">Installiert</string>
+    <string name="filter_all">Alle</string>
+    <string name="list_on">An: %1$d/%2$d</string>
+    <string name="nothing_to_open">Nichts zu öffnen</string>
+    <string name="info_version">Version %1$s (%2$d)</string>
+    <string name="info_installed">Installiert am %1$s</string>
+    <string name="info_permissions">Berechtigungen</string>
+    <string name="info_no_permissions">Keine Berechtigungen zum Ändern</string>
+    <string name="info_special_access">Spezieller Zugriff</string>
+    <string name="perm_on">An</string>
+    <string name="perm_off">Aus</string>
+    <string name="perm_partial">Teilweise</string>
+    <string name="info_waiting">Wähle am Fernseher im Feld „USB-Debugging zulassen?“ die Option „Immer zulassen“ und tippe auf „Zulassen“</string>
+    <string name="info_unreachable">Zum Ändern von Berechtigungen ist ADB-Debugging nötig, das an diesem Fernseher ausgeschaltet ist</string>
+    <string name="info_failed">Der Fernseher hat es nicht geändert: %1$s</string>
+    <string name="info_stopped">Beendet</string>
+    <string name="info_data_cleared">Daten gelöscht</string>
+    <string name="access_all_files">Zugriff auf alle Dateien</string>
+    <string name="access_overlay">Über anderen Apps anzeigen</string>
+    <string name="access_write_settings">Systemeinstellungen ändern</string>
+    <string name="access_install">Unbekannte Apps installieren</string>
+    <string name="action_open">Öffnen</string>
+    <string name="action_force_stop">Beenden erzwingen</string>
+    <string name="action_clear_data">Daten löschen</string>
+    <string name="action_clear_data_confirm">Noch einmal drücken</string>
+    <string name="action_uninstall">Deinstallieren</string>
+    <string name="request_subtitle">Aktiviere, was diese App anfordert</string>
+    <string name="request_all_settings">Alle App-Einstellungen</string>
+    <string name="grp_calendar">Kalender</string>
+    <string name="grp_call_log">Anrufliste</string>
+    <string name="grp_camera">Kamera</string>
+    <string name="grp_contacts">Kontakte</string>
+    <string name="grp_location">Standort</string>
+    <string name="grp_microphone">Mikrofon</string>
+    <string name="grp_phone">Telefon</string>
+    <string name="grp_sensors">Körpersensoren</string>
+    <string name="grp_sms">SMS</string>
+    <string name="grp_storage">Dateien und Medien</string>
+    <string name="grp_activity">Körperliche Aktivität</string>
+    <string name="grp_nearby">Geräte in der Nähe</string>
+    <string name="grp_notifications">Benachrichtigungen</string>
+</resources>

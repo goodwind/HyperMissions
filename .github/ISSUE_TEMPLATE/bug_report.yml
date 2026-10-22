@@ -1,0 +1,32 @@
+name: Bug report
+description: Something does not work on your TV
+labels: [bug]
+body:
+  - type: input
+    id: tv
+    attributes:
+      label: TV model and firmware
+      description: "`adb shell getprop ro.product.model` and `ro.build.version.release`"
+      placeholder: "Xiaomi MiTV-MFTR0, HyperOS, Android 11"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: HyperMissions version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what happened instead. A photo of the screen helps.
+    validations:
+      required: true
+  - type: textarea
+    id: state
+    attributes:
+      label: Permission state, if a change did not stick
+      description: "`adb shell dumpsys package <package> | grep -A3 \"runtime permissions\"`, or `adb shell appops get <package>` for a special access."
+      render: shell

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_installed">Đã cài đặt</string>
+    <string name="filter_all">Tất cả</string>
+    <string name="list_on">Bật: %1$d/%2$d</string>
+    <string name="nothing_to_open">Không có gì để mở</string>
+    <string name="info_version">Phiên bản %1$s (%2$d)</string>
+    <string name="info_installed">Cài đặt ngày %1$s</string>
+    <string name="info_permissions">Quyền</string>
+    <string name="info_no_permissions">Không có quyền nào có thể thay đổi</string>
+    <string name="info_special_access">Quyền truy cập đặc biệt</string>
+    <string name="perm_on">Bật</string>
+    <string name="perm_off">Tắt</string>
+    <string name="perm_partial">Một phần</string>
+    <string name="info_waiting">Trên TV, trong hộp “Cho phép gỡ lỗi USB?”, hãy chọn “Luôn cho phép” rồi chọn “Cho phép”</string>
+    <string name="info_unreachable">Thay đổi quyền cần bật gỡ lỗi ADB, nhưng tính năng này đang tắt trên TV này</string>
+    <string name="info_failed">TV không thay đổi được: %1$s</string>
+    <string name="info_stopped">Đã dừng</string>
+    <string name="info_data_cleared">Đã xóa dữ liệu</string>
+    <string name="access_all_files">Truy cập tất cả tệp</string>
+    <string name="access_overlay">Hiển thị trên các ứng dụng khác</string>
+    <string name="access_write_settings">Thay đổi cài đặt hệ thống</string>
+    <string name="access_install">Cài đặt ứng dụng không rõ nguồn gốc</string>
+    <string name="action_open">Mở</string>
+    <string name="action_force_stop">Buộc dừng</string>
+    <string name="action_clear_data">Xóa dữ liệu</string>
+    <string name="action_clear_data_confirm">Nhấn lần nữa</string>
+    <string name="action_uninstall">Gỡ cài đặt</string>
+    <string name="request_subtitle">Bật những gì ứng dụng này yêu cầu</string>
+    <string name="request_all_settings">Tất cả cài đặt ứng dụng</string>
+    <string name="grp_calendar">Lịch</string>
+    <string name="grp_call_log">Nhật ký cuộc gọi</string>
+    <string name="grp_camera">Máy ảnh</string>
+    <string name="grp_contacts">Danh bạ</string>
+    <string name="grp_location">Vị trí</string>
+    <string name="grp_microphone">Micrô</string>
+    <string name="grp_phone">Điện thoại</string>
+    <string name="grp_sensors">Cảm biến cơ thể</string>
+    <string name="grp_sms">SMS</string>
+    <string name="grp_storage">Tệp và đa phương tiện</string>
+    <string name="grp_activity">Hoạt động thể chất</string>
+    <string name="grp_nearby">Thiết bị ở gần</string>
+    <string name="grp_notifications">Thông báo</string>
+</resources>
