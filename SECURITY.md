@@ -19,6 +19,13 @@ So the key is worth protecting, and the app's code is kept narrow on purpose:
   `RequestEntry` alias is, and it takes a package name from the intent and nothing else. What that
   package's permissions then are can be changed only by the person using the remote.
 
+## Updates
+
+The app asks `api.github.com` for the latest release of `goodwind/HyperMissions`, takes only a file under that
+repository's own `releases/download`, refuses it unless its SHA-256 equals the digest GitHub announced for it, and
+hands it to Android's package installer, which asks you to confirm and refuses a file not signed with the key of the
+copy it replaces. That needs the permission to install packages, which the app declares and the TV asks about.
+
 ## Limits you should know about
 
 - Anything that can read the app's private files (root, a backup of the app data) can use the key

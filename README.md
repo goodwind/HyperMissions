@@ -17,8 +17,6 @@ from the remote. No root, launcher-independent.
 
 </div>
 
-![The apps as cards](docs/img/grid.png)
-
 ## Why
 
 Some TV firmware ships without Android's own App Info and permission screens. Xiaomi HyperOS on the
@@ -33,20 +31,25 @@ HyperMissions is that missing screen, as a normal app.
 
 ## What it does
 
-**The apps as cards:** icon, name, and how many of its permissions are on (`On: 3/4`). *Installed*
-shows what you put on the TV, *All* every package.
+**Two columns.** The apps on the left (icon, name, how many of their permissions are on: `3/4`); on the right,
+the app under the focus with all its permissions and special accesses as sliders. Two sliders over the list:
+*Show system apps* (off: only what you put on the TV) and *Only apps asking for permissions* (on by default: hides
+the apps with nothing to switch).
 
-**One app:** version and install date; **Open**, **Force stop**, **Clear data** (press twice) and
+**One app** (the right column): version and install date; **Open**, **Force stop**, **Clear data** (press twice) and
 **Uninstall**; its permissions by kind (camera, microphone, contacts, location, files and media,
-phone, SMS...) and the special accesses it asks for. OK on a row turns it on or off.
-
-<p align="center"><img src="docs/img/panel.png" width="70%" alt="One app: actions and permissions"></p>
+phone, SMS...) and the special accesses it asks for, as sliders. OK on a row turns it on or off; a slider in
+the middle means some of a kind are on and some off.
 
 **Answers the apps that ask for those screens.** When an app sends you to App Info, All files access,
 Display over other apps, Change system settings or Install unknown apps, a panel opens over it with
 just what is off, and Back returns to the app.
 
 <p align="center"><img src="docs/img/request.png" width="70%" alt="A request panel over another app"></p>
+
+**Updates itself.** When it opens it asks GitHub whether there is a newer release; if there is, a line and a button
+in the left column offer it. OK downloads it (checked against the SHA-256 GitHub announced for the file) and hands
+it to Android's installer, which asks you to confirm.
 
 Special accesses covered: **All files access**, **Display over other apps**, **Change system settings**,
 **Install unknown apps**.
@@ -58,12 +61,12 @@ the TV's language. Translations were prepared without native review, corrections
 
 ## Install
 
-1. Download `HyperMissions-1.0.0.apk` from the [latest release](https://github.com/goodwind/HyperMissions/releases/latest).
+1. Download `HyperMissions-1.1.0.apk` from the [latest release](https://github.com/goodwind/HyperMissions/releases/latest).
 2. Install it on the TV. With a computer on the same network:
 
    ```bash
    adb connect <tv-ip>:5555
-   adb install HyperMissions-1.0.0.apk
+   adb install HyperMissions-1.1.0.apk
    ```
 
    or copy the file to the TV and open it with a file manager.
@@ -75,7 +78,7 @@ Check the download if you like: the APK is signed with a key whose certificate S
 F3:93:9E:A0:02:8E:B3:82:93:B5:0C:F1:98:56:9C:CC:EB:0C:EE:4E:9A:31:19:2D:48:90:CA:8F:D1:9C:C0:D2
 ```
 
-(`apksigner verify --print-certs HyperMissions-1.0.0.apk`). Updates only install over a copy signed
+(`apksigner verify --print-certs HyperMissions-1.1.0.apk`). Updates only install over a copy signed
 with the same key.
 
 ### One setting on the TV: ADB debugging over the network
@@ -93,8 +96,9 @@ Looking at permissions (the list and the panels) does not need any of this.
 
 ## Using it
 
-- **List:** arrows to move, OK to open an app, Back to leave. *Installed* / *All* at the top.
-- **Panel:** OK on a permission or a special access turns it on or off (a whole kind at once:
+- **List:** arrows to move, the app under the focus shows on the right; OK or Right moves into its column, Left or
+  Back comes back, Back on the list leaves. The two sliders on top filter the list.
+- **Right column:** OK on a permission or a special access turns it on or off (a whole kind at once:
   turning *Contacts* on grants everything the app asks for in it). OK on **Clear data** twice; it
   cannot be undone. **Uninstall** hands over to Android's own confirmation.
 - Changing a permission makes Android restart the app, as with the system's own screen.

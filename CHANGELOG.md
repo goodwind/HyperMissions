@@ -4,6 +4,23 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow
 [Semantic Versioning](https://semver.org/).
 
+## [1.1.0] - 2026-10-28
+
+### Changed
+
+- A new layout in two columns: the apps on the left (icon, name, how many permissions are on), the app under the
+  focus on the right with its actions and all its permissions and special accesses as sliders (a slider in the
+  middle: some of a kind are on).
+- The filters are two sliders over the list: *Show system apps*, and *Only apps asking for permissions* (on by
+  default, hides the apps with nothing to switch).
+
+### Added
+
+- Updates: on opening, the app asks GitHub for the latest release; a newer one is offered with a button that fills
+  as a progress bar while the file comes. The file is checked against the SHA-256 GitHub announced for it, then
+  handed to Android's installer, which asks for the confirmation. 1.0.0 has no updater, so install this one by hand.
+- The icon before the title, and the author, licence and GitHub link at the bottom.
+
 ## [1.0.0] - 2026-10-22
 
 First release.

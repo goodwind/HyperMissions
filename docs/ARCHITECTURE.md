@@ -1,12 +1,19 @@
 # Architecture
 
-Kotlin and Jetpack Compose, one module, no other dependencies. The interface is drawn on a 960×540 dp
+Kotlin and Jetpack Compose, one module, no other dependencies. The only code from outside the Android and Compose
+libraries is `update/`, a copy of the update check, the checked download and the hand-over to Android's installer
+that HyperVoice carries too. The interface is drawn on a 960×540 dp
 canvas that `canvasDensity` scales to the screen, so it looks the same on a 1080p TV at 240 or 320 dpi.
 
 ```
 app/src/main/java/io/github/goodwind/hypermissions/
-├── MainActivity.kt     the launcher entry: the grid of apps; also tells RequestEntry to look again
-├── ListScreen.kt       the grid of cards (icon, name, "On: n/m"), the Installed / All filter, focus restore
+├── MainActivity.kt     the launcher entry: the two-column screen; also tells RequestEntry to look again
+├── ListScreen.kt       the two columns: the filters and the list on the left (focus moves the right column), the footer
+├── AppPane.kt          the right column: the focused app's actions and its permissions as sliders
+├── PermissionEditor.kt one app's details and the changes made to it (shared by AppPane and DetailPanel)
+├── Switches.kt         the slider and the row that holds it
+├── UpdateRow.kt        the update offer: a line, a button, and the bar it turns into while the file comes
+├── update/             version, the GitHub release check, the checked download, the package installer hand-over
 ├── DetailPanel.kt      one app: actions, permissions, special accesses; the compact "what is off" form
 ├── Widgets.kt          FocusRow / ActionButton / AccessRow (remote focus = a light plate), glyphs, colors
 ├── AppDetails.kt       reads an app: version, dates, runtime permission groups, special accesses

@@ -15,8 +15,8 @@ android {
         applicationId = "io.github.goodwind.hypermissions"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 2
+        versionName = "1.1.0"
     }
 
     // Releases are signed with a key that lives outside version control, in local/signing.properties
