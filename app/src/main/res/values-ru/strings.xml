@@ -43,7 +43,7 @@
     <string name="filter_show_system">Показывать системные</string>
     <string name="update_available">Доступно обновление %1$s</string>
     <string name="update_install">Установить</string>
-    <string name="update_downloading">Скачиваю… %1$d%%</string>
+    <string name="update_downloading">Скачиваю…</string>
     <string name="update_installing">Передаю установщику…</string>
     <string name="update_failed">Не удалось обновить: %1$s</string>
 </resources>

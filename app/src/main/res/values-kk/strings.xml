@@ -43,7 +43,7 @@
     <string name="filter_show_system">Жүйелік қолданбаларды көрсету</string>
     <string name="update_available">%1$s жаңартуы қолжетімді</string>
     <string name="update_install">Орнату</string>
-    <string name="update_downloading">Жүктелуде… %1$d%%</string>
+    <string name="update_downloading">Жүктелуде…</string>
     <string name="update_installing">Орнатқышқа беріледі…</string>
     <string name="update_failed">Жаңарту сәтсіз: %1$s</string>
 </resources>

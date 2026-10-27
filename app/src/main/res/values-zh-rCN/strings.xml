@@ -43,7 +43,7 @@
     <string name="filter_show_system">显示系统应用</string>
     <string name="update_available">有可用更新 %1$s</string>
     <string name="update_install">安装</string>
-    <string name="update_downloading">正在下载… %1$d%%</string>
+    <string name="update_downloading">正在下载…</string>
     <string name="update_installing">正在交给安装程序…</string>
     <string name="update_failed">更新失败：%1$s</string>
 </resources>

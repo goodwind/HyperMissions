@@ -43,7 +43,7 @@
     <string name="filter_show_system">عرض تطبيقات النظام</string>
     <string name="update_available">تحديث %1$s متاح</string>
     <string name="update_install">تثبيت</string>
-    <string name="update_downloading">جارٍ التنزيل… %1$d%%</string>
+    <string name="update_downloading">جارٍ التنزيل…</string>
     <string name="update_installing">جارٍ التسليم للمثبّت…</string>
     <string name="update_failed">فشل التحديث: %1$s</string>
 </resources>

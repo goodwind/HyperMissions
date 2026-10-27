@@ -43,7 +43,7 @@
     <string name="filter_show_system">Mostrar apps del sistema</string>
     <string name="update_available">Actualización %1$s disponible</string>
     <string name="update_install">Instalar</string>
-    <string name="update_downloading">Descargando… %1$d%%</string>
+    <string name="update_downloading">Descargando…</string>
     <string name="update_installing">Pasando al instalador…</string>
     <string name="update_failed">Falló la actualización: %1$s</string>
 </resources>

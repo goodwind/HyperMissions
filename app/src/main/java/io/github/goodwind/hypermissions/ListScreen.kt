@@ -86,13 +86,13 @@ fun ListScreen(onLaunch: (String) -> Unit, onUninstall: (String) -> Unit) {
 
     Column(Modifier.fillMaxSize().background(Ink.Background)) {
         Row(Modifier.weight(1f).fillMaxWidth().padding(horizontal = 48.dp).padding(top = 24.dp)) {
-            Column(Modifier.width(330.dp)) {
+            Column(Modifier.width(352.dp)) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     androidx.compose.foundation.Image(painterResource(R.drawable.ic_launcher), contentDescription = null, modifier = Modifier.size(36.dp))
                     Spacer(Modifier.width(12.dp))
                     BasicText(stringResource(R.string.app_name), style = Text.LargeTitle)
                 }
-                UpdateRow(Modifier.padding(top = 6.dp))
+                UpdateRow(Modifier.padding(top = 10.dp, bottom = 4.dp))
                 SwitchRow(
                     stringResource(R.string.filter_show_system),
                     if (showAll) Position.On else Position.Off,
