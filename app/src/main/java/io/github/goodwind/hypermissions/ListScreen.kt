@@ -42,6 +42,7 @@ import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -84,7 +85,11 @@ fun ListScreen(onLaunch: (String) -> Unit, onUninstall: (String) -> Unit) {
             )
         } else {
             Column(Modifier.fillMaxSize().padding(horizontal = 48.dp).padding(top = 28.dp)) {
-                BasicText(stringResource(R.string.app_name), style = Text.LargeTitle)
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Image(painterResource(R.drawable.ic_launcher), contentDescription = null, modifier = Modifier.size(36.dp))
+                    Spacer(Modifier.width(12.dp))
+                    BasicText(stringResource(R.string.app_name), style = Text.LargeTitle)
+                }
                 Row(Modifier.padding(top = 12.dp, bottom = 14.dp), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                     Chip(stringResource(R.string.filter_installed), selected = !showAll) { showAll = false }
                     Chip(stringResource(R.string.filter_all), selected = showAll) { showAll = true }
@@ -100,7 +105,7 @@ fun ListScreen(onLaunch: (String) -> Unit, onUninstall: (String) -> Unit) {
                 LazyVerticalGrid(
                     columns = GridCells.Fixed(COLUMNS),
                     state = gridState,
-                    modifier = Modifier.fillMaxSize(),
+                    modifier = Modifier.weight(1f).fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(16.dp),
                     verticalArrangement = Arrangement.spacedBy(16.dp),
                 ) {
@@ -109,12 +114,25 @@ fun ListScreen(onLaunch: (String) -> Unit, onUninstall: (String) -> Unit) {
                         AppCard(item, if (focusHere) restore else null) { selected = item.pkg }
                     }
                 }
+                Footer()
             }
         }
     }
 }
 
 private const val COLUMNS = 5
+
+/** Who made it, under what licence, and where the source is: all proper names, so it is not translated. */
+@Composable
+private fun Footer() {
+    val context = LocalContext.current
+    val version = remember { runCatching { context.packageManager.getPackageInfo(context.packageName, 0).versionName }.getOrNull().orEmpty() }
+    BasicText(
+        "HyperMissions $version · © 2026 Alexandr Serdtsev · Apache License 2.0 · github.com/goodwind/HyperMissions",
+        style = Text.Callout.copy(fontSize = 12.sp, textAlign = TextAlign.Center),
+        modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp),
+    )
+}
 
 @Composable
 private fun Chip(label: String, selected: Boolean, onClick: () -> Unit) {
