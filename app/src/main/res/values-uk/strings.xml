@@ -41,4 +41,9 @@
     <string name="grp_notifications">Сповіщення</string>
     <string name="filter_only_with_permissions">Лише із запитуваними дозволами</string>
     <string name="filter_show_system">Показувати системні</string>
+    <string name="update_available">Доступне оновлення %1$s</string>
+    <string name="update_install">Встановити</string>
+    <string name="update_downloading">Завантажую… %1$d%%</string>
+    <string name="update_installing">Передаю інсталятору…</string>
+    <string name="update_failed">Не вдалося оновити: %1$s</string>
 </resources>

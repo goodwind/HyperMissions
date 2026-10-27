@@ -92,6 +92,7 @@ fun ListScreen(onLaunch: (String) -> Unit, onUninstall: (String) -> Unit) {
                     Spacer(Modifier.width(12.dp))
                     BasicText(stringResource(R.string.app_name), style = Text.LargeTitle)
                 }
+                UpdateRow(Modifier.padding(top = 6.dp))
                 SwitchRow(
                     stringResource(R.string.filter_show_system),
                     if (showAll) Position.On else Position.Off,

@@ -41,4 +41,9 @@
     <string name="grp_notifications">Meldingen</string>
     <string name="filter_only_with_permissions">Alleen apps die toestemming vragen</string>
     <string name="filter_show_system">Systeemapps tonen</string>
+    <string name="update_available">Update %1$s beschikbaar</string>
+    <string name="update_install">Installeren</string>
+    <string name="update_downloading">Downloaden… %1$d%%</string>
+    <string name="update_installing">Doorgeven aan het installatieprogramma…</string>
+    <string name="update_failed">Update mislukt: %1$s</string>
 </resources>

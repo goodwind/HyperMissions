@@ -42,4 +42,9 @@
     <string name="grp_notifications">Notifications</string>
     <string name="filter_only_with_permissions">Only apps asking for permissions</string>
     <string name="filter_show_system">Show system apps</string>
+    <string name="update_available">Update %1$s is available</string>
+    <string name="update_install">Install</string>
+    <string name="update_downloading">Downloading… %1$d%%</string>
+    <string name="update_installing">Handing over to the installer…</string>
+    <string name="update_failed">Update failed: %1$s</string>
 </resources>

@@ -41,4 +41,9 @@
     <string name="grp_notifications">通知</string>
     <string name="filter_only_with_permissions">権限を要求するアプリのみ</string>
     <string name="filter_show_system">システムアプリを表示</string>
+    <string name="update_available">アップデート %1$s があります</string>
+    <string name="update_install">インストール</string>
+    <string name="update_downloading">ダウンロード中… %1$d%%</string>
+    <string name="update_installing">インストーラーに渡しています…</string>
+    <string name="update_failed">アップデートに失敗: %1$s</string>
 </resources>

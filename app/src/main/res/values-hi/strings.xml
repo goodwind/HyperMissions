@@ -41,4 +41,9 @@
     <string name="grp_notifications">सूचनाएँ</string>
     <string name="filter_only_with_permissions">केवल अनुमति माँगने वाले ऐप्स</string>
     <string name="filter_show_system">सिस्टम ऐप्स दिखाएँ</string>
+    <string name="update_available">अपडेट %1$s उपलब्ध है</string>
+    <string name="update_install">इंस्टॉल करें</string>
+    <string name="update_downloading">डाउनलोड हो रहा है… %1$d%%</string>
+    <string name="update_installing">इंस्टॉलर को सौंपा जा रहा है…</string>
+    <string name="update_failed">अपडेट विफल: %1$s</string>
 </resources>

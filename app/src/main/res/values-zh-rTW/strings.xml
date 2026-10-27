@@ -41,4 +41,9 @@
     <string name="grp_notifications">通知</string>
     <string name="filter_only_with_permissions">僅顯示要求權限的應用程式</string>
     <string name="filter_show_system">顯示系統應用程式</string>
+    <string name="update_available">有可用更新 %1$s</string>
+    <string name="update_install">安裝</string>
+    <string name="update_downloading">正在下載… %1$d%%</string>
+    <string name="update_installing">正在交給安裝程式…</string>
+    <string name="update_failed">更新失敗：%1$s</string>
 </resources>

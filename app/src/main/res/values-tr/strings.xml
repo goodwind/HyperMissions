@@ -41,4 +41,9 @@
     <string name="grp_notifications">Bildirimler</string>
     <string name="filter_only_with_permissions">Yalnızca izin isteyen uygulamalar</string>
     <string name="filter_show_system">Sistem uygulamalarını göster</string>
+    <string name="update_available">%1$s güncellemesi mevcut</string>
+    <string name="update_install">Yükle</string>
+    <string name="update_downloading">İndiriliyor… %1$d%%</string>
+    <string name="update_installing">Yükleyiciye aktarılıyor…</string>
+    <string name="update_failed">Güncelleme başarısız: %1$s</string>
 </resources>

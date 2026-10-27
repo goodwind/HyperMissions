@@ -41,4 +41,9 @@
     <string name="grp_notifications">Notifications</string>
     <string name="filter_only_with_permissions">Seulement les applis demandant des autorisations</string>
     <string name="filter_show_system">Afficher les applis système</string>
+    <string name="update_available">Mise à jour %1$s disponible</string>
+    <string name="update_install">Installer</string>
+    <string name="update_downloading">Téléchargement… %1$d%%</string>
+    <string name="update_installing">Transmission à l’installeur…</string>
+    <string name="update_failed">Échec de la mise à jour : %1$s</string>
 </resources>

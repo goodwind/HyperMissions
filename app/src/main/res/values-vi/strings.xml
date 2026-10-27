@@ -41,4 +41,9 @@
     <string name="grp_notifications">Thông báo</string>
     <string name="filter_only_with_permissions">Chỉ ứng dụng yêu cầu quyền</string>
     <string name="filter_show_system">Hiện ứng dụng hệ thống</string>
+    <string name="update_available">Có bản cập nhật %1$s</string>
+    <string name="update_install">Cài đặt</string>
+    <string name="update_downloading">Đang tải… %1$d%%</string>
+    <string name="update_installing">Đang chuyển cho trình cài đặt…</string>
+    <string name="update_failed">Cập nhật không thành công: %1$s</string>
 </resources>
