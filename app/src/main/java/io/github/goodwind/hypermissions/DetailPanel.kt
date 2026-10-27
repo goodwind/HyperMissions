@@ -16,7 +16,6 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.withFrameNanos
 import androidx.compose.ui.Modifier
@@ -26,10 +25,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 import java.text.DateFormat
 import java.util.Date
 
@@ -51,29 +47,22 @@ fun DetailPanel(
     onClose: () -> Unit,
 ) {
     val context = LocalContext.current
-    val scope = rememberCoroutineScope()
     val first = remember { FocusRequester() }
-
-    var details by remember(pkg) { mutableStateOf<AppDetails?>(null) }
+    val editor = rememberPermissionEditor(pkg)
+    val details = editor.details
     // What was off when the panel opened, so that a row stays on screen after it is turned on.
     var asked by remember(pkg) { mutableStateOf<Set<String>?>(null) }
     var expanded by remember(pkg) { mutableStateOf(false) }
-    var message by remember(pkg) { mutableStateOf<String?>(null) }
-    var notice by remember(pkg) { mutableStateOf<String?>(null) }
-    var busy by remember(pkg) { mutableStateOf(false) }
-    // Clearing data cannot be undone, so it takes two presses; the second must come soon after the first.
-    var confirmClear by remember(pkg) { mutableStateOf(false) }
-    LaunchedEffect(confirmClear) {
-        if (confirmClear) {
+    LaunchedEffect(editor.confirmClear) {
+        if (editor.confirmClear) {
             delay(4_000)
-            confirmClear = false
+            editor.forgetConfirm()
         }
     }
 
     LaunchedEffect(pkg) {
-        val loaded = withContext(Dispatchers.IO) { AppDetails.load(context, pkg) }
+        val loaded = editor.load()
         asked = loaded?.let { d -> d.groups.filter { !it.allGranted }.map { it.key }.toSet() + d.special.filter { !it.allowed }.map { it.op.name } }
-        details = loaded
     }
     val compact = requestOnly && !expanded && (onlyOp != null || !asked.isNullOrEmpty())
     LaunchedEffect(details == null, compact) {
@@ -87,54 +76,13 @@ fun DetailPanel(
     val removable = remember(pkg) {
         runCatching { (context.packageManager.getApplicationInfo(pkg, 0).flags and ApplicationInfo.FLAG_SYSTEM) == 0 }.getOrDefault(false)
     }
-    val waitingText = stringResource(R.string.info_waiting)
-    val unreachableText = stringResource(R.string.info_unreachable)
-    val failedText = stringResource(R.string.info_failed)
-    val stoppedText = stringResource(R.string.info_stopped)
-    val clearedText = stringResource(R.string.info_data_cleared)
-
-    /** Runs [change] (AdbShell calls, each returning what the shell printed), then reloads. [done] is shown when it worked. */
-    fun change(done: String? = null, change: (waiting: () -> Unit) -> List<String>) {
-        if (busy) return
-        busy = true
-        message = null
-        notice = null
-        scope.launch {
-            val problem = withContext(Dispatchers.IO) {
-                try {
-                    val printed = change { message = waitingText }.firstOrNull { it.isNotEmpty() }
-                    printed?.lineSequence()?.first()?.let { failedText.format(it) }
-                } catch (e: AdbShell.AdbException) {
-                    unreachableText
-                }
-            }
-            details = withContext(Dispatchers.IO) { AppDetails.load(context, pkg) }
-            message = problem
-            if (problem == null) notice = done
-            busy = false
-        }
-    }
-
-    fun toggle(group: PermissionGroup) = change { waiting ->
-        group.permissions.map { AdbShell.setPermission(context, pkg, it, !group.allGranted, waiting) }
-    }
-
-    fun toggle(access: SpecialAccess) = change { waiting ->
-        listOf(AdbShell.setAppOp(context, pkg, access.op, !access.allowed, waiting))
-    }
-
-    fun forceStop() = change(stoppedText) { waiting ->
-        listOf(AdbShell.act(context, pkg, AdbShell.AppAction.FORCE_STOP, waiting))
-    }
-
-    fun clearData() {
-        if (!confirmClear) {
-            confirmClear = true
-            return
-        }
-        confirmClear = false
-        change(clearedText) { waiting -> listOf(AdbShell.act(context, pkg, AdbShell.AppAction.CLEAR_DATA, waiting)) }
-    }
+    val message = editor.message
+    val notice = editor.notice
+    val confirmClear = editor.confirmClear
+    fun toggle(group: PermissionGroup) = editor.toggle(group)
+    fun toggle(access: SpecialAccess) = editor.toggle(access)
+    fun forceStop() = editor.forceStop()
+    fun clearData() = editor.clearData()
 
     val d = details ?: return
     Column(
@@ -210,7 +158,7 @@ private fun stateText(group: PermissionGroup) = stringResource(
     },
 )
 
-private fun AdbShell.AppOp.labelRes() = when (this) {
+fun AdbShell.AppOp.labelRes() = when (this) {
     AdbShell.AppOp.MANAGE_EXTERNAL_STORAGE -> R.string.access_all_files
     AdbShell.AppOp.SYSTEM_ALERT_WINDOW -> R.string.access_overlay
     AdbShell.AppOp.WRITE_SETTINGS -> R.string.access_write_settings

@@ -100,6 +100,8 @@ fun ActionButton(
     label: String,
     focusRequester: FocusRequester? = null,
     destructive: Boolean = false,
+    width: Dp = 140.dp,
+    modifier: Modifier = Modifier,
     onClick: () -> Unit,
 ) {
     val source = remember { MutableInteractionSource() }
@@ -110,8 +112,8 @@ fun ActionButton(
         else -> Ink.Label
     }
     Column(
-        Modifier
-            .width(140.dp)
+        modifier
+            .width(width)
             .let { if (focusRequester != null) it.focusRequester(focusRequester) else it }
             .clip(RoundedCornerShape(14.dp))
             .background(if (focused) Ink.Focus else Ink.Fill)

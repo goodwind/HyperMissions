@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="filter_installed">Орнатылған</string>
-    <string name="filter_all">Барлығы</string>
     <string name="list_on">Қосулы: %1$d/%2$d</string>
     <string name="nothing_to_open">Ашатын ештеңе жоқ</string>
     <string name="info_version">Нұсқа %1$s (%2$d)</string>
@@ -41,4 +39,6 @@
     <string name="grp_activity">Дене белсенділігі</string>
     <string name="grp_nearby">Жақын құрылғылар</string>
     <string name="grp_notifications">Хабарландырулар</string>
+    <string name="filter_only_with_permissions">Тек сұралатын рұқсаттары бар</string>
+    <string name="filter_show_system">Жүйелік қолданбаларды көрсету</string>
 </resources>

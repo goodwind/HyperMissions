@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="filter_installed">설치됨</string>
-    <string name="filter_all">전체</string>
     <string name="list_on">켜짐 %1$d/%2$d</string>
     <string name="nothing_to_open">열 항목이 없습니다</string>
     <string name="info_version">버전 %1$s(%2$d)</string>
@@ -41,4 +39,6 @@
     <string name="grp_activity">신체 활동</string>
     <string name="grp_nearby">근처 기기</string>
     <string name="grp_notifications">알림</string>
+    <string name="filter_only_with_permissions">권한을 요청하는 앱만</string>
+    <string name="filter_show_system">시스템 앱 표시</string>
 </resources>

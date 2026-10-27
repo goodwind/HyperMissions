@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="filter_installed">Installate</string>
-    <string name="filter_all">Tutte</string>
     <string name="list_on">Attivi: %1$d/%2$d</string>
     <string name="nothing_to_open">Niente da aprire</string>
     <string name="info_version">Versione %1$s (%2$d)</string>
@@ -41,4 +39,6 @@
     <string name="grp_activity">Attività fisica</string>
     <string name="grp_nearby">Dispositivi nelle vicinanze</string>
     <string name="grp_notifications">Notifiche</string>
+    <string name="filter_only_with_permissions">Solo app che richiedono autorizzazioni</string>
+    <string name="filter_show_system">Mostra app di sistema</string>
 </resources>

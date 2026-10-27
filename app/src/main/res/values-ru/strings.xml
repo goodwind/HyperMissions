@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="filter_installed">Установленные</string>
-    <string name="filter_all">Все</string>
     <string name="list_on">Вкл: %1$d/%2$d</string>
     <string name="nothing_to_open">Нечего открывать</string>
     <string name="info_version">Версия %1$s (%2$d)</string>
@@ -41,4 +39,6 @@
     <string name="grp_activity">Физическая активность</string>
     <string name="grp_nearby">Устройства поблизости</string>
     <string name="grp_notifications">Уведомления</string>
+    <string name="filter_only_with_permissions">Только с запрашиваемыми разрешениями</string>
+    <string name="filter_show_system">Показывать системные</string>
 </resources>
