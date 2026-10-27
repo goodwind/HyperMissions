@@ -7,7 +7,7 @@
 **App permissions for HyperOS TVs, whose firmware has no screen for them.**
 
 See and change what every app is allowed to do, stop it, clear its data, open it or uninstall it,
-from the remote. No root, no launcher required.
+from the remote. No root, launcher-independent.
 
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/goodwind/HyperMissions?display_name=tag)](https://github.com/goodwind/HyperMissions/releases/latest)
