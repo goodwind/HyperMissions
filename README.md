@@ -26,7 +26,7 @@ MiTV-MFTR0 (Android 11), for example, has no "App info", no "All files access", 
 other apps". The result is that:
 
 - there is no way to turn a permission off, or on;
-- apps that send you to those screens show "Error" (File Manager+ does, when it wants access to
+- apps that send you to those screens show "Error" (a file manager does, when it wants access to
   storage) and then cannot be set up at all.
 
 HyperMissions is that missing screen, as a normal app.
@@ -146,13 +146,6 @@ The APK is in `app/build/outputs/apk/release/`. A release is signed with the key
 `local/signing.properties` (`storeFile`, `storePassword`, `keyAlias`, `keyPassword`; not in version
 control). Without that file the build falls back to your debug key: it installs, but cannot update a
 release. See [CONTRIBUTING](CONTRIBUTING.md).
-
-## Related
-
-- [Aerial](https://github.com/pengchujin/aerial-tv), a launcher for Android TV. A pull request adds
-  the same App Info panel inside it ([#233](https://github.com/pengchujin/aerial-tv/pull/233)).
-  If both are installed, only one answers the system's App Info request, so Android never asks which
-  one to use.
 
 ## License
 

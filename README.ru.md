@@ -148,13 +148,6 @@ APK лежит в `app/build/outputs/apk/release/`. Релиз подписыв�
 сборка использует ваш отладочный ключ: она установится, но обновить релиз не сможет. См.
 [CONTRIBUTING](CONTRIBUTING.md).
 
-## Связанное
-
-- [Aerial](https://github.com/pengchujin/aerial-tv) — лаунчер для Android TV. Pull request добавляет в него
-  такую же панель «О приложении» ([#233](https://github.com/pengchujin/aerial-tv/pull/233)). Если
-  установлены оба, на системный запрос «О приложении» отвечает только один, поэтому Android не спрашивает,
-  чем открыть.
-
 ## Лицензия
 
 [Apache License 2.0](LICENSE). Сторонние материалы перечислены в [NOTICE](NOTICE).
