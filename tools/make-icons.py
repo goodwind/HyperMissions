@@ -84,7 +84,7 @@ def banner(w=640, h=360):
     draw_shield(base, 28, 70, 2.2)
     d = ImageDraw.Draw(base)
     d.text((262, 136), "HyperMissions", font=ImageFont.truetype(FONT, 46), fill=(255, 255, 255, 255))
-    d.text((264, 204), "App permissions for TV", font=ImageFont.truetype(FONT_REGULAR, 25), fill=(199, 210, 254, 255))
+    d.text((264, 204), "App permissions for HyperOS TV", font=ImageFont.truetype(FONT_REGULAR, 23), fill=(199, 210, 254, 255))
     return base.convert("RGB")
 
 

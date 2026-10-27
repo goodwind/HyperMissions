@@ -4,7 +4,7 @@
 
 # HyperMissions
 
-**App permissions for Android TVs whose firmware has no screen for them.**
+**App permissions for HyperOS TVs, whose firmware has no screen for them.**
 
 See and change what every app is allowed to do, stop it, clear its data, open it or uninstall it,
 from the remote. No root, no launcher required.
