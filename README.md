@@ -49,7 +49,8 @@ just what is off, and Back returns to the app.
 
 **Updates itself.** When it opens it asks GitHub whether there is a newer release; if there is, a line and a button
 in the left column offer it. OK downloads it (checked against the SHA-256 GitHub announced for the file) and hands
-it to Android's installer, which asks you to confirm.
+it to Android's installer, which asks you to confirm. Some TV firmware (Xiaomi) shows its own warning that the file
+was not checked by its store; choose to continue.
 
 Special accesses covered: **All files access**, **Display over other apps**, **Change system settings**,
 **Install unknown apps**.
@@ -61,12 +62,12 @@ the TV's language. Translations were prepared without native review, corrections
 
 ## Install
 
-1. Download `HyperMissions-1.1.0.apk` from the [latest release](https://github.com/goodwind/HyperMissions/releases/latest).
+1. Download `HyperMissions-1.1.1.apk` from the [latest release](https://github.com/goodwind/HyperMissions/releases/latest).
 2. Install it on the TV. With a computer on the same network:
 
    ```bash
    adb connect <tv-ip>:5555
-   adb install HyperMissions-1.1.0.apk
+   adb install HyperMissions-1.1.1.apk
    ```
 
    or copy the file to the TV and open it with a file manager.
@@ -78,7 +79,7 @@ Check the download if you like: the APK is signed with a key whose certificate S
 F3:93:9E:A0:02:8E:B3:82:93:B5:0C:F1:98:56:9C:CC:EB:0C:EE:4E:9A:31:19:2D:48:90:CA:8F:D1:9C:C0:D2
 ```
 
-(`apksigner verify --print-certs HyperMissions-1.1.0.apk`). Updates only install over a copy signed
+(`apksigner verify --print-certs HyperMissions-1.1.1.apk`). Updates only install over a copy signed
 with the same key.
 
 ### One setting on the TV: ADB debugging over the network

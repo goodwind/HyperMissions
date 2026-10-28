@@ -4,6 +4,15 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow
 [Semantic Versioning](https://semver.org/).
 
+## [1.1.1] - 2026-10-28
+
+### Fixed
+
+- Updating from inside the app crashed on TV firmware whose installer has no confirmation screen for session
+  installs (Xiaomi, Android 11). The file now goes to the installer's ordinary "open an APK" screen there.
+- After leaving the installer without installing, the update button stayed on "Handing over to the installer…";
+  it now offers the update again.
+
 ## [1.1.0] - 2026-10-28
 
 ### Changed

@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicText
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -26,10 +27,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
 import io.github.goodwind.hypermissions.update.ApkInstaller
 import io.github.goodwind.hypermissions.update.Downloads
 import io.github.goodwind.hypermissions.update.HttpTransport
@@ -60,6 +64,17 @@ fun UpdateRow(modifier: Modifier = Modifier) {
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
     var state by remember { mutableStateOf<UpdateUi?>(null) }
+    // Back from the installer's screen without installing (the app would be gone if it had): offer the update again.
+    val owner = LocalLifecycleOwner.current
+    DisposableEffect(owner) {
+        val installing = context.getString(R.string.update_installing)
+        val observer = LifecycleEventObserver { _, event ->
+            val s = state
+            if (event == Lifecycle.Event.ON_RESUME && s is UpdateUi.Busy && s.text == installing) state = UpdateUi.Offer(s.update)
+        }
+        owner.lifecycle.addObserver(observer)
+        onDispose { owner.lifecycle.removeObserver(observer) }
+    }
     LaunchedEffect(Unit) {
         val installed = runCatching { context.packageManager.getPackageInfo(context.packageName, 0).versionName }.getOrNull().orEmpty()
         val result = withContext(Dispatchers.IO) { UpdateChecker(HttpTransport(), REPO).check(installed) { it.startsWith("HyperMissions-") } }
